@@ -1,0 +1,335 @@
+The repository https://github.com/nullclaw/nullclaw
+ is a framework for building autonomous AI agents. It is designed to run extremely lightweight AI assistants with almost no system resources.
+
+Key facts about it:
+
+~1 MB binary
+
+Near-zero dependencies
+
+Works on Raspberry Pi, servers, or cloud VMs
+
+Supports 50+ AI providers (OpenAI, Gemini, DeepSeek, etc.)
+
+Can connect to Telegram, Discord, WhatsApp, Slack, Email, etc.
+
+Includes built-in tools like shell access, scheduling, memory, and web requests.
+
+So this project is basically a tiny infrastructure to run AI agents anywhere.
+
+What You Can Build With It
+1. AI Customer Support Bot (Good for Your Business)
+
+You could create a WhatsApp / Telegram AI assistant for businesses.
+
+Example:
+
+Client messages → AI answers automatically.
+
+Use cases:
+
+Restaurant reservation bot
+
+Real-estate inquiry bot
+
+Customer support bot
+
+FAQ assistant
+
+Example flow:
+
+Customer → WhatsApp message
+       ↓
+nullclaw agent
+       ↓
+LLM (DeepSeek / OpenAI)
+       ↓
+Answer + business data
+
+This could be a paid SaaS service for SMEs.
+
+2. Autonomous Research Agent
+
+You can build an AI that researches topics automatically.
+
+Example workflow:
+
+User: "Research EV market in India"
+
+Agent:
+1. Search web
+2. Read articles
+3. Summarize
+4. Save notes
+5. Send report
+
+Good for:
+
+market research
+
+lead research
+
+competitor analysis
+
+3. Personal AI Assistant
+
+You can create a Jarvis-style assistant that runs locally.
+
+Capabilities:
+
+read emails
+
+send reminders
+
+run shell commands
+
+manage files
+
+summarize documents
+
+Because the system is tiny, it can run on a laptop or Raspberry Pi.
+
+4. AI DevOps / Automation Agent
+
+This is powerful for developers.
+
+Agent can:
+
+monitor logs
+
+deploy code
+
+run scripts
+
+check servers
+
+fix simple issues automatically
+
+Example:
+
+Server CPU > 90%
+Agent triggers
+Runs scaling script
+Sends alert
+5. AI Lead Generation Agent
+
+This is interesting for your Abet Works business.
+
+Agent could:
+
+Scan Google Maps for businesses
+
+Collect leads
+
+Generate personalized outreach messages
+
+Send emails or WhatsApp
+
+Automated pipeline:
+
+Find leads → Analyze business → Write message → Send outreach
+
+This can run 24/7 automatically.
+
+6. Multi-Platform AI Bot Network
+
+Since it supports many channels:
+
+Telegram
+
+Discord
+
+Slack
+
+WhatsApp
+
+Email
+
+IRC
+
+You can build one AI that lives everywhere.
+
+Example:
+
+User messages on Telegram → same AI answers on WhatsApp.
+
+7. AI Content Automation System
+
+You could build an automated system that:
+
+Finds trending topics
+
+Writes blog posts
+
+Posts to WordPress
+
+Shares on social media
+
+This aligns with your AI content engine idea.
+
+A High-Value Idea (Best for You)
+
+Build a "AI Business Assistant SaaS"
+
+Features:
+
+WhatsApp AI support
+
+Lead qualification
+
+Appointment booking
+
+CRM integration
+
+Auto follow-ups
+
+You sell it to SMEs for:
+
+₹2000–₹8000 per month per business.
+
+Reality Check
+
+This repo is low-level infrastructure, not a ready product.
+
+You must:
+
+configure models
+
+create workflows
+
+connect APIs
+
+build a frontend if needed
+
+But advantage:
+
+extremely cheap to run
+
+very customizable
+
+✅ If you want, I can also show you:
+
+3 powerful SaaS products you can build with this repo in 30 days
+
+How to turn it into a money-making AI service.
+
+Can i deploy this on vercel
+
+Short answer: No — not properly.
+
+You generally cannot deploy this type of project on Vercel.
+
+Reason: Vercel is designed for serverless web apps, not long-running AI agents.
+
+Why It Doesn't Fit Vercel
+
+The Nullclaw agent behaves like a persistent background process.
+
+It needs to:
+
+run continuously
+
+listen to events (Telegram, Slack, WhatsApp)
+
+maintain memory/state
+
+execute tasks over time
+
+run system commands
+
+Vercel functions are:
+
+stateless
+
+short-lived
+
+limited to ~10–60 seconds execution
+
+no background workers
+
+So the process would terminate immediately.
+
+Platforms Where It Works Well
+1. VPS (Best option)
+
+Providers:
+
+DigitalOcean
+
+Hetzner
+
+Linode
+
+Vultr
+
+Typical instance:
+
+1 vCPU
+1–2 GB RAM
+$5–10/month
+
+Nullclaw is tiny, so this is more than enough.
+
+2. Container Platforms
+
+Also good:
+
+Railway
+
+Render
+
+Fly.io
+
+These allow long-running services.
+
+3. Local Server / Raspberry Pi
+
+You could run it on:
+
+home server
+
+mini PC
+
+Raspberry Pi
+
+Because the binary is ~1 MB, resource usage is minimal.
+
+Where Vercel Can Be Used
+
+You could still use Vercel for:
+
+frontend dashboard
+
+marketing website
+
+control panel UI
+
+API proxy
+
+Architecture example:
+
+Frontend (Vercel)
+       ↓
+API / Dashboard
+       ↓
+Nullclaw Agent (VPS)
+       ↓
+LLM providers
+Practical Advice for You
+
+Given your stack (Python + automation + AI):
+
+Best deployment pattern:
+
+Vercel → Frontend dashboard
+PostgreSQL → database
+VPS → AI agents
+
+Cost:
+
+Vercel: free
+Postgres: $10
+VPS: $5
+Total: ~$15/month
+
+Enough to run multiple AI agents.

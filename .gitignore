@@ -1,0 +1,133 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+zig-out/
+zig-cache/
+
+# Large files (>100MB not allowed on GitHub)
+.codeium/
+*.large
+*.bin
+*.exe
+*.dll
+*.so
+*.dylib
+
+# IDE and local settings
+.idea/
+.vscode/
+.qwen/
+.cursor/
+.windsurf/
+
+# Local config with secrets
+.nullclaw/
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Customer data (IMPORTANT!)
+/opt/abetworks/customers/
+~/.nullclaw/
+~/.abetworks/
+
+# Secrets and keys
+*.key
+*.pem
+secrets/
+
+# Uploads
+uploads/
+downloads/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Lock files (keep package-lock.json but ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Zig build files
+*.zig.zon.lock
+
+# Nullclaw binaries
+nullclaw-repo/zig-out/
+nullclaw-repo/zig-cache/
+
+# Agent logs (customer-specific)
+agent-logs/
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# Docker
+docker-compose.override.yml
+
+# Testing
+playwright-report/
+test-results/
